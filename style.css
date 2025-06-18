@@ -1,0 +1,28 @@
+.epreuve {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.epreuve:nth-child(2n) {
+  flex-direction: row-reverse; /* Inverse les colonnes pour la 2e épreuve */
+}
+
+.epreuve .image-grande {
+  flex: 1;
+  max-width: 45%;
+}
+
+.epreuve .texte {
+  flex: 1;
+  max-width: 50%;
+}
+
+.epreuve .image-petite {
+  width: 200px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
