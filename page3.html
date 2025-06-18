@@ -1,0 +1,122 @@
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Les épreuves</title>
+  <style>
+    body {
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 30px;
+      font-family: 'Segoe UI', sans-serif;
+      color: #222;
+    }
+
+    .logo-container {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .logo-container img {
+      height: 60px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .epreuve {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 20px;
+      margin-bottom: 50px;
+      flex-wrap: wrap;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    .epreuve:nth-child(2n) {
+      flex-direction: row-reverse;
+    }
+
+    .epreuve .image-grande {
+      flex: 1;
+      max-width: 45%;
+    }
+
+    .epreuve .texte {
+      flex: 1;
+      max-width: 50%;
+    }
+
+    .epreuve .image-petite {
+      width: 200px;
+      margin-top: 10px;
+      border-radius: 8px;
+    }
+
+    .epreuve img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      margin: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-container">
+    <img src="Robot image/IUT Velizy 2campus logo 2020.png" alt="Logo">
+  </div>
+  <div class="card">
+    <h1>Présentation des épreuves</h1>
+
+    <div class="epreuve">
+      <div class="image-grande">
+        <img src="Robot image/Labyrinthe.png" alt="Labyrinthe grande">
+      </div>
+      <div class="texte">
+        <h3>Épreuve 1 : Labyrinthe</h3>
+        <p>L’épreuve consistera à partir d'un point de départ, traverser un labyrinthe défini par une suite de couloirs perpendiculaires, arriver au point d'arrivée défini par une couleur au sol ( Durant l’épreuve il y aura des piège que le robot devra détecter par lui même ).</p>
+        <img src="Robot image/Piège.png" alt="Labyrinthe petite" class="image-petite">
+      </div>
+    </div>
+
+    <div class="epreuve">
+      <div class="image-grande">
+        <img src="Robot image/24hVelizy.png" alt="Course grande">
+      </div>
+      <div class="texte">
+        <h3>Épreuve 2 : Course</h3>
+        <p>L’épreuve consistera à faire une course comme les 24h du mans mais condensé en quelques minutes en suivant une piste matérialisé par un trait noir et parcourir 2 tours entiers en affichant le temps de parcours (il y aura une 2e mission qui aura des obstacles que le robot doit être capable d’éviter).</p>
+        <img src="Robot image/Obstacle.png" alt="Course petite" class="image-petite">
+      </div>
+    </div>
+
+    <button onclick="location.href='index.html'">Retour à l'accueil</button>
+  </div>
+</body>
+</html>

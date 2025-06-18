@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Accueil - Projet Robot</title>
+  <style>
+    body {
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 30px;
+      font-family: 'Segoe UI', sans-serif;
+      color: #222;
+    }
+
+    .logo-container {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .logo-container img {
+      height: 60px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    img.main-image {
+      max-width: 100%;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
+    nav button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      margin: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    nav button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo-container">
+    <img src="Robot image/IUT Velizy 2campus logo 2020.png" alt="Logo">
+  </div>
+
+  <div class="card">
+    <h1>Bienvenue sur notre projet Robot</h1>
+    <p>Ce site présente notre projet robot.</p>
+    <img src="Robot image/Robot carte.png" alt="Dessin du robot" class="main-image">
+
+    <nav>
+      <button onclick="location.href='page1.html'">Notre groupe</button>
+      <button onclick="location.href='page2.html'">Le robot</button>
+      <button onclick="location.href='page3.html'">Les épreuves</button>
+    </nav>
+  </div>
+
+</body>
+</html>
+
